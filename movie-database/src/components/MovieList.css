@@ -1,0 +1,69 @@
+/* MovieList.css */
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.movie-info a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.movie-info a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  color: #ff9900;
+  font-size: 1.5rem;
+}
+
+.error {
+  color: #f44336;
+  font-size: 1.5rem;
+}
